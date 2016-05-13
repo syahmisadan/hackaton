@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: May 13, 2016 at 05:17 PM
+-- Generation Time: May 13, 2016 at 05:21 PM
 -- Server version: 10.1.8-MariaDB
 -- PHP Version: 5.6.14
 
@@ -45,6 +45,22 @@ CREATE TABLE `mak` (
   `mak_key` varchar(10) NOT NULL,
   `mak_date` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `lauk`
+--
+ALTER TABLE `lauk`
+  ADD PRIMARY KEY (`lauk_id`);
+
+--
+-- Indexes for table `mak`
+--
+ALTER TABLE `mak`
+  ADD PRIMARY KEY (`mak_id`);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
