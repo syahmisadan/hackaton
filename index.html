@@ -10,12 +10,10 @@
     <link rel="stylesheet" href="css/main.css">
 
     <!-- Js -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <<<<<<< HEAD
 
     <!-- SWAL  -->
-    <link rel="stylesheet" href="example/example.css">
   	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
 
     <script src="dist/sweetalert-dev.js"></script>
@@ -24,6 +22,16 @@
     <script src="http://www.w3schools.com/lib/w3data.js"></script>
     <script src="js/main.js"></script>
 >>>>>>> origin/master
+	<!-- CSS Include File -->
+    <link href="css/plugins/metisMenu/metisMenu.min.css" rel="stylesheet">
+    <link href="css/sb-admin-2.css" rel="stylesheet">
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    <!-- jQuery and JavaScript -->
+    <script src="js/jquery-1.11.0.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/metisMenu/metisMenu.min.js"></script>
+    <script src="js/sb-admin-2.js"></script>
   </head>
   <body>
     <div w3-include-html="header.html"></div>
@@ -39,12 +47,12 @@
     <h3 class="panel-title">Enter as Mom</h3>
   </div>
   <div class="panel-body">
-    <li class="input">
-		<div class="ui">
-			<p></p>
-			<button class="btn btn-primary btn-lg">Enter As Mom :)</button>
-		</div>
-	</li></div>
+<!-- 	    <li class="input">
+			<div class="ui"> -->
+				<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModalInsert" data-dismiss="modal">Enter As Mom :)</button>
+<!-- 			</div>
+		</li> -->
+	</div>
   </div>
 </div>
 <div class="col-md-6">  <div class="panel panel-info">
@@ -71,9 +79,9 @@
         </div>
        </div>
        <div class="modal-footer">
-         <input type="submit" class="btn btn-primary btn-xs" name="name" value="Submit">
+         <input type="submit" class="btn btn-primary " name="name" value="Submit">
        </form>
-         <button type="button" class="btn btn-default btn-xs" data-dismiss="modal">Close</button>
+         <button type="button" class="btn btn-default " data-dismiss="modal">Close</button>
        </div>
      </div>
    </div>
@@ -107,5 +115,46 @@ document.querySelector('li.input button').onclick = function(){
 	});
 };
 </script>
-  </body>
+<div class="modal fade" id="myModalInsert" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">
+          <span aria-hidden="true">&times;</span>
+          <span class="sr-only">Close</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">Pendaftaran Pengguna</h4>
+      </div>
+    <div class="modal-body">
+      <form action="" id="insert" name="insert" method="POST">
+        <table width="100%" border="0">
+          <tr>
+            <td ><strong>Nama</strong></td>
+          </tr>
+          <tr>
+          	<td >
+              <input class="form-control"name="mak" id="mak" required>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <strong>Key</strong>
+            </td>
+          </tr>
+          <tr>
+          	<td >
+              <input class="form-control"name="mak" id="mak" required>
+            </td>
+          </tr>
+        </table>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default">Kembali</button>
+          <button type="submit" class="btn btn-primary">Simpan</button>
+        </div>
+      </form>
+    </div>
+    </div>  
+  </div>
+</div>
+</body>
 </html>
