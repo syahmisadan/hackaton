@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hackaton | Mak Masak Apa Tu ?</title>
+     <!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/simplex/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+     <script src="http://www.w3schools.com/lib/w3data.js"></script>
+     <script src="js/main.js"></script>
+  </head>
+  <body ng-app="">
+    <div w3-include-html="header.html"></div>
+      <div class="container">
+        <h1>Vote Here</h1>
+
+        <p>Input something in the input box:</p>
+        <p>Name : <input type="text" ng-model="name" placeholder="Enter name here"></p>
+        <h1>Hello {{name}}</h1>
+      </div>
+        </body>
+<script>
+  w3IncludeHTML();
+</script>
+</html>
