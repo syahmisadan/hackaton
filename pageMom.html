@@ -24,16 +24,17 @@
   <body ng-app="myApp" ng-controller="myCtrl">
     <div w3-include-html="header.html"></div>
       <div class="container">
-        <h1>Mom Menu</h1>
+        <h1>Add Menu</h1>
         <p>
           Dear ladies, please insert the menu here
         </p>
         <div class="row">
           <div class="col-md-8"><button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">
             <span class="glyphicon glyphicon-plus-sign"></span> Add Menu
-          </button>
+          </button> You can only add 3 menu
         </div>
           <div class="col-md-4">
+            <br>
           </div>
         </div>
 
@@ -59,11 +60,8 @@
              </div>
            </div>
 <!-- @EndModal -->
-
         <form>
-
         <div class="row" id="col1"></div><!-- @End Row -->
-
         <div class="row">
           <div class="col-md-8">
         </div>
@@ -74,6 +72,8 @@
         </form>
           </div>
         </div>
+
       </div>
+      <!-- @EndContainer -->
     </body>
 </html>

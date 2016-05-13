@@ -21,6 +21,7 @@ app.controller('myCtrl',function($scope,$http,$location){
     w3IncludeHTML();
   });
 
+
   $scope.ajaxAdd = function(){
 
     var nilai = $scope.i;
