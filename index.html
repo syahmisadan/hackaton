@@ -31,7 +31,6 @@
   <div class="jumbotron">
     <h1>Mak Masak Apa tu ?</h1>
     <p>Don't get complicated, moms always right!<p>
-    <!-- <p><a class="btn btn-primary btn-lg">Learn more</a></p> -->
   </div>
   <div class="row">
 <div class="col-md-6">
@@ -54,8 +53,31 @@
   </div>
 	</ul>
   <div class="panel-body">
-    <a href="#" class="btn btn-info btn-lg">Be a Voter :)</a></div>
-  </div></div>
+    <a href="#" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Be a Voter :)</a></div>
+  </div>
+</div>
+<div class="modal fade" id="myModal" role="dialog">
+   <div class="modal-dialog modal-sm">
+     <div class="modal-content">
+       <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal">&times;</button>
+         <h4 class="modal-title">Insert Key</h4>
+       </div>
+       <div class="modal-body">
+         <form action="pageVote.html" method="post">
+         <div class="form-group">
+           <label class="control-label" for="key">Key</label>
+           <input class="form-control input-sm" type="text" id="key">
+        </div>
+       </div>
+       <div class="modal-footer">
+         <input type="submit" class="btn btn-primary btn-xs" name="name" value="Submit">
+       </form>
+         <button type="button" class="btn btn-default btn-xs" data-dismiss="modal">Close</button>
+       </div>
+     </div>
+   </div>
+ </div>
 </div>
 </div>
 
