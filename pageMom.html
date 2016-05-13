@@ -17,15 +17,27 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="http://www.w3schools.com/lib/w3data.js"></script>
     <script src="js/main.js"></script>
+    <!-- SWAL -->
+    <script src="dist/sweetalert-dev.js"></script>
+    <link rel="stylesheet" href="dist/sweetalert.css">
   </head>
   <body ng-app="myApp" ng-controller="myCtrl">
     <div w3-include-html="header.html"></div>
       <div class="container">
-        <h1>Mom Here</h1>
+        <h1>Mom Menu</h1>
         <p>
-          <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">
+          Dear ladies, please insert the menu here
+        </p>
+        <div class="row">
+          <div class="col-md-8"><button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">
             <span class="glyphicon glyphicon-plus-sign"></span> Add Menu
           </button>
+        </div>
+          <div class="col-md-4">
+          </div>
+        </div>
+
+<!--  @Modal-->
           <div class="modal fade" id="myModal" role="dialog">
              <div class="modal-dialog modal-sm">
                <div class="modal-content">
@@ -46,9 +58,22 @@
                </div>
              </div>
            </div>
-        </p>
-        <div class="row" id="col1">
-        </div><!-- @End Row -->
+<!-- @EndModal -->
+
+        <form>
+
+        <div class="row" id="col1"></div><!-- @End Row -->
+
+        <div class="row">
+          <div class="col-md-8">
         </div>
+          <div class="col-md-4">
+            <button type="submit" ng-click="ajaxAdd()" class="btn btn-warning">
+            <span class="glyphicon glyphicon-ok"></span> Save Menu
+            </button>
+        </form>
+          </div>
+        </div>
+      </div>
     </body>
 </html>
